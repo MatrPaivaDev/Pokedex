@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title> <!--Choose the Document Title -->
+    
+    <!-- Normalize: Responsible for maintaining style consistency across different browsers. -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" 
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Fonte "Roboto": a classic Google font provided by Google itself.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" 
+    rel="stylesheet">
+
+    <!-- CSS style --> 
+    <link rel="stylesheet" href="/assets/css/global.css"> <!-- Global -->
+    <link rel="stylesheet" href="/assets/css/pokedex.css"> <!-- local-->
+</head>
+
+<!-- Body of the website -->
+<body>
+    <section class="content">
+        <h1>Pokedex</h1>
+
+        <!-- Creating an ordered list here -->
+        <ol id="pokemonList" class="pokemons">
+        </ol>
+
+        <div class="pagination">
+            <button id="loadMoreButton" type="button">
+                Load More
+            </button>
+        </div>
+    </section>
+
+    <!-- JS code -->
+    <!-- The poke_api needs to be declared first because it contains a constant that will be used in the main code. -->
+    <script src="/assets/js/pokemon_model.js"></script> 
+    <script src="/assets/js/poke_api.js"></script> 
+    <script src="/assets/js/main.js"></script>
+</body>
+</html>
+
+<!-- To create a comment, simply press "cmd + /". -->
